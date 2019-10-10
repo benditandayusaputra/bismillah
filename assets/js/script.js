@@ -1,15 +1,20 @@
-$('.nav-link').click(function(event) {
+$('.scroll').click(function(e) {
 
     var to = $(this).attr('href');
     var toELement = $(to);
 
-    $('html, body').animate({
-        scrollTop : toELement.offset().top - 100
-    }, 2000)
+    $('html,body').animate({
+        scrollTop: toELement.offset().top - 100
+    }, 2000, 'easeInOutExpo');
 
-    event.preventDefault();
+    e.preventDefault();
 
-})
+});
+
+// $('.dark').click(function() {
+//     $('body').removeClass('bg-info');
+//     $('body').addClass('bg-dark');
+// });
 
 $(window).scroll(function() {
     var cobaScroll = $(this).scrollTop();

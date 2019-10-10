@@ -27,16 +27,25 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link scroll" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">Link</a>
+                <a class="nav-link scroll" href="#form">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link scroll" href="#">Link</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link scroll" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link default" href="#">Default</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dark" href="">Dark</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link light" href="#">Light</a>
               </li>
             </ul>
           </div>
@@ -133,6 +142,37 @@
   </div>
   </section>
 
+  <section class="pb-5">
+  <div class="container">
+    <div class="bg-white p-5 rounded-sm shadow">
+      <h1 class="text-center">Akibat Polusi</h1>
+      <div class="row py-5">
+        <div class="col text-center">
+          <img class="rounded-circle" src="<?= base_url('assets/img/icon-1.png') ?>" alt="">
+          <h2 class="mt-4 mb-3 h4">Bend</h2>
+          <p class="px-4 text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nihil iusto, quos rerum
+          </p>
+        </div>
+        <div class="col text-center">
+          <img class="rounded-circle" src="<?= base_url('assets/img/icon-1.png') ?>" alt="">
+          <h2 class="mt-4 mb-3 h4">Bend</h2>
+          <p class="px-4 text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nihil iusto, quos rerum
+          </p>
+        </div>
+        <div class="col text-center">
+          <img class="rounded-circle" src="<?= base_url('assets/img/icon-1.png') ?>" alt="">
+          <h2 class="mt-4 mb-3 h4">Bend</h2>
+          <p class="px-4 text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nihil iusto, quos rerum
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
   <section class="py-5">
   <div class="container">
     <div class="bg-white p-5 rounded-sm shadow">
@@ -155,7 +195,7 @@
   </div>
   </section>
 
-  <section class="py-5">
+  <section class="py-5" id="form">
   <div class="container">
     <div class="bg-white p-5 rounded-sm shadow">
       <h1 class="text-center mb-5">Contact Us</h1>
