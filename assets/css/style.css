@@ -1,0 +1,150 @@
+.blend {
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	text-shadow: 0px 0px 10px #333;
+}
+nav {
+}
+.header {
+	text-shadow: 0px 0px 10px #222;
+}
+.carousel-item > div {
+	background-size: cover;
+}
+.heading {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 75vh;
+}
+
+.polasi {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40%;
+}
+
+#about {
+	padding-top: 5rem;
+}
+
+footer li a {
+	font-size: smaller;
+	color: #ccc;
+}
+
+.footer {
+	background-color: #222;
+}
+
+.coba {
+	opacity: 0;
+	transform: translateY(-20px);
+}
+
+.coba.muncul {
+	animation: keluar 1s ease forwards;
+}
+
+.asap-satu {
+	position: fixed;
+	top: 0;
+	opacity: 0;
+	z-index: 9999;
+	transform: translate(-50px, -1000px);
+	animation: asapsatu 8s linear infinite;
+	/*animation: coba 2s linear infinite;*/
+}
+
+.asap-dua {
+	position: fixed;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	z-index: 9999;
+	transform: translate(50px, -1000px);
+	animation: asapdua 8s linear infinite;
+}
+
+.asap-tiga {
+	position: fixed;
+	top: 0;
+	left: 200px;
+	opacity: 0;
+	z-index: 9999;
+	transform: translate(-50px, -1000px);
+	animation: asapsatu 8s linear infinite;
+}
+
+.asap-empat {
+	position: fixed;
+	top: 0;
+	right: 200px;
+	opacity: 0;
+	z-index: 9999;
+	transform: translate(50px, -1000px);
+	animation: asapdua 8s linear infinite;
+}
+
+.asap-lima {
+	position: fixed;
+	top: 0;
+	left: 400px;
+	opacity: 0;
+	z-index: 9999;
+	transform: translate(-50px, -1000px);
+	animation: asapsatu 8s linear infinite;
+}
+
+.asap-enam {
+	position: fixed;
+	top: 0;
+	right: 400px;
+	opacity: 0;
+	z-index: 9999;
+	transform: translate(50px, -1000px);
+	animation: asapdua 8s linear infinite;
+}
+
+@keyframes keluar {
+	from {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes asapsatu {
+	from {
+		opacity: 1;
+		transform: translate(50px, 1000px);
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes asapdua {
+	from {
+		opacity: 1;
+		transform: translate(-50px, 1000px);
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes coba {
+	from {
+		transform: translate(-20px, 10px);
+	}
+	to {
+		transform: translate(20px, -10px);
+	}
+}
